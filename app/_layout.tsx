@@ -8,6 +8,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import '../global.css';
 import { CartProvider } from './contexts/CartContext';
+import { AuthProvider } from './contexts/AuthContext';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -29,6 +30,7 @@ export default function RootLayout() {
   }
 
   return (
+    <AuthProvider>
     <CartProvider>
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
@@ -51,5 +53,6 @@ export default function RootLayout() {
       <StatusBar style="auto" />
     </ThemeProvider>
     </CartProvider>
+    </AuthProvider>
   );
 }
