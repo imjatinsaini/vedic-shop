@@ -11,15 +11,15 @@ interface GoogleAuthProps {
   onSuccess: () => void;
   onFailure: () => void;
 }
-
+ 
 const GoogleAuth: React.FC<GoogleAuthProps> = ({ onSuccess, onFailure }) => {
   const { login } = useAuth();
 
   const [request, response, promptAsync] = Google.useAuthRequest({
-    clientId: '343094080461-d8v8rtuuq9ptdk66eg4u380m8k58u2q4.apps.googleusercontent.com', // Replace with your Expo client ID
-    iosClientId: '343094080461-o20lon95svpce9crhep96cr1e92qonk3.apps.googleusercontent.com',
-    androidClientId: 'YOUR_ANDROID_CLIENT_ID',
-    webClientId: '343094080461-d8v8rtuuq9ptdk66eg4u380m8k58u2q4.apps.googleusercontent.com',
+    clientId: '828638066653-fheoum0p13321vqsg401u7bdglq76rv2.apps.googleusercontent.com', // Replace with your Expo client ID
+    iosClientId: '828638066653-ihaod2gkle25pvugdvqoprap86nkgc1f.apps.googleusercontent.com',
+    androidClientId: '828638066653-fheoum0p13321vqsg401u7bdglq76rv2.apps.googleusercontent.com',
+    webClientId: '828638066653-fheoum0p13321vqsg401u7bdglq76rv2.apps.googleusercontent.com',
   });
 
   React.useEffect(() => {

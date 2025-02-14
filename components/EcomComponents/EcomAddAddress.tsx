@@ -939,7 +939,7 @@ const EcomAddAddress: React.FC<EcomAddAddressProps> = ({
                   onPress={() =>
                     setCurrentAddress((prev) => ({ ...prev, addressType: 'home' }))
                   }
-                  className={`p-2 border rounded-md ${
+                  className={`p-2 border   rounded-md ${
                     currentAddress.addressType === 'home'
                       ? 'border-orange-500 bg-orange-100'
                       : 'border-gray-300'

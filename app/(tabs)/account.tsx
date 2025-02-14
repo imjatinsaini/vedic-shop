@@ -11,7 +11,7 @@
 //     </ScrollView>
 //   );
 // };
-
+ 
 // export default AccountPage;
 
 // app/(tabs)/AccountPage.tsx
